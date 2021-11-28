@@ -68,6 +68,7 @@ nav {
 
     body {
         width: 90%;
+        height: auto;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -211,9 +212,42 @@ nav {
 }
 
 
-/* ----------- SECTION 1 POUR DESKTOP (>1280px) ---------- */
+/* ----------- SECTION 1 POUR DESKTOP (>1024px) ---------- */
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
+    
+    .bienvenue {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 500px;
+        background-image: url("../img/campus.png");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .container_section_1 {
+        width: 60%;
+        height: auto;
+    }
+
+    .container_section_1 h2 {
+        font-size: 2rem;
+    }
+
+    .container_section_1 h3 {
+        font-size: 1.5rem;
+    }
+
+    .container_cta_section_1 {
+        display: inline-block;
+    }
+
+    .container_cta_section_1 button {
+        margin-left: 25px;
+    }
 
 }
 
@@ -257,6 +291,33 @@ nav {
 .container_numbers_1 p, .container_numbers_2 p {
     font-size: 12px;
     color: #696969;
+}
+
+/* ----------- SECTION 2 POUR DESKTOP (>1024px) ---------- */
+
+@media screen and (min-width: 1024px) {
+
+    .container_section_2 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+    }
+
+    .container_numbers_1, .container_numbers_2 {
+        border: none;
+    }
+
+    .container_numbers_1 h2, .container_numbers_2 h2 {
+        font-size: 3rem;
+    }
+
+    .container_numbers_1 p, .container_numbers_2 p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
 }
 
 /* ----------- SECTION 3 MOBILE ---------- */
@@ -309,9 +370,42 @@ nav {
     border-radius: 5px;
 }
 
+/* ----------- SECTION 3 POUR DESKTOP (>1024px) ---------- */
+
+@media screen and (min-width: 1024px) {
+
+    .nice {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        background-image: url("../img/Nice.png");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+    }
+
+    .container_nice {
+        width: 60%;
+    }
+
+    .container_nice h2 {
+        font-size: 2rem;
+    }
+
+    .container_nice p {
+        width: 75%;
+    }
+
+    .container_img_nice {
+        display: none;
+    }
+
+}
+
 /* ----------- SECTION 4 MOBILE (EQUIPE) ---------- */
 
-.container_equipe {
+.equipe {
     width: 90%;
     height: auto;
     margin: 40px auto;
@@ -321,7 +415,16 @@ nav {
     text-align: center;
 }
 
-.container_equipe h2 {
+.container_equipe {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.equipe h2 {
     font-size: 28px;
     color: #F76C6C;
     padding: 10px;
@@ -363,7 +466,38 @@ nav {
     color: #696969;
 }
 
-/* ----------- SECTION 4 MOBILE (FORMATEUR) ---------- */
+/* ----------- SECTION 4 (EQUIPE) POUR DESKTOP (>1024px) ---------- */
+
+@media screen and (min-width: 1024px) {
+    
+    .equipe {
+        width: 100%;
+    }
+
+    .container_equipe {
+        flex-direction: row;
+    }
+
+    .equipe h2 {
+        font-size: 2rem;
+    }
+
+    .container_img_membre_equipe {
+        width: 275px;
+    }
+
+    .container_img_membre_equipe span {
+        font-size: 1.15rem;
+    }
+
+    .container_membre_equipe .role {
+        font-size: 1.5rem;
+        margin-top: 12px;
+    }
+
+}
+
+/* ----------- SECTION 5 MOBILE (FORMATEUR) ---------- */
 
 .container_formateur {
     width: 90%;
@@ -418,17 +552,48 @@ nav {
     color: #696969;
 }
 
+/* ----------- SECTION 5 (FORMATEUR) DESKTOP (>1024px) ---------- */
+
+@media screen and (min-width: 1024px) {
+
+    .container_formateur {
+        padding:20px;
+        margin-bottom: 10px;
+    }
+
+    .container_formateur h2 {
+        font-size: 2rem;
+    }
+
+    .container_img_formateur {
+        width: 350px;
+        height: auto;
+    }
+
+    .container_img_formateur span {
+        font-size: 1.25rem;
+    }
+
+    .container_formateur .role {
+        font-size: 1.5rem;
+        margin-top: 12px;
+    }
+
+}
+
 /* ----------- FOOTER ---------- */
 
 footer {
     display: flex;
     background: #333333;
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
+
+
 
 
