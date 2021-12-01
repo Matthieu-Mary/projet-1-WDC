@@ -106,14 +106,14 @@ nav {
     }
 
     .desktop ul li a:hover {
-        color: #2b3552e8;
+        color: #F76C6C
     }
 
     .desktop ul li a::after {
         content: "";
         display: block;
         position: absolute;
-        background-color: #1e2538;
+        background-color: #F76C6C;
         width: 0%;
         height: 2.5px;
         transition: width 0.3s ease-in-out;
