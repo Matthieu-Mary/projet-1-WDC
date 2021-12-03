@@ -20,7 +20,8 @@ body {
 }
 
 nav {
-    padding: 10px;
+    margin: 0 auto;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +33,7 @@ nav {
 .container_title_logo {
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .container_title_logo h1 {
@@ -51,15 +53,44 @@ nav {
     border-radius: 5px;
 }
 
-.container_puce_mobile {
+.mobile .container_puce_mobile {
     width: 7.5vw;
     height: 3vh;
     cursor: pointer;
+    margin-right: 10px;
 }
 
-.container_puce_mobile img {
+.mobile .container_puce_mobile img {
     width: 100%;
     height: 100%;
+}
+
+.mobile .toggle_menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: #F0F0F5;  
+    list-style: none;
+    border-bottom: 1px solid black;
+}
+
+.mobile .toggle_menu li {
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.mobile .toggle_menu li a {
+    display: block;
+    text-decoration: none;  
+    color: black;
+}
+
+.mobile .toggle_menu li a:hover {
+    color: #F76C6C
 }
 
 /* ----------- NAV POUR DESKTOP (>1280px) ---------- */
