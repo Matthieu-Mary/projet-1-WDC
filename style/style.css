@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* ----------- NAV POUR MOBILE ---------- */
-
 body {
     width: 100%;
     height: 100vh;
@@ -14,6 +12,8 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* ----------- NAV POUR MOBILE ---------- */
 
 .desktop {
     display: none;
@@ -616,10 +616,81 @@ nav {
 
 }
 
+/* ----------- SECTION CHOIX ---------- */
+
+.choix {
+    width: 100%;
+    height: 100%;
+    margin: 12px auto;
+}
+
+.container-choix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-choix h2 {
+    font-size: 28px;
+    color: #F76C6C;
+    padding: 10px;
+}
+
+.container-choix p {
+    text-align: center;
+    margin-bottom: 10px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.container-questions-respons {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.container-questions-respons label {
+    font-size: 14px;
+}
+
+.container-respons {
+    width: 50%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-choix button {
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 5px auto 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #F76C6C;
+    border: none;
+    border-radius: 10px;
+}
+
+.container-choix button:hover {
+    color:#F76C6C;
+    background: white;
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+
 /* ----------- FOOTER ---------- */
 
 footer {
-    display: flex;
     background: #333333;
     width: 100%;
     height: 75px;
@@ -634,10 +705,12 @@ footer {
 @media screen and (max-width: 375px) {
 
     footer {
-      height: 22px;
+      height: 25px;
     }
 
 }
+
+
 
 
 /* ----------- PAGE CONTACT ---------- */
