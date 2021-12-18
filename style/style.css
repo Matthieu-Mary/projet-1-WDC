@@ -180,7 +180,7 @@ nav {
 
 }
 
-/* ----------- SECTION 1 MOBILE ---------- */
+/* ----------- SECTION BIENVENUE MOBILE ---------- */
 
 .container_section_1 {
     width: 90%;
@@ -243,7 +243,7 @@ nav {
 }
 
 
-/* ----------- SECTION 1 POUR DESKTOP (>1024px) ---------- */
+/* ----------- SECTION BIENVENUE POUR DESKTOP (>1024px) ---------- */
 
 @media screen and (min-width: 1024px) {
     
@@ -283,7 +283,7 @@ nav {
 }
 
 
-/* ----------- SECTION 2 MOBILE ---------- */
+/* ----------- SECTION CHIFFRES CLES MOBILE ---------- */
 
 .container_section_2 {
     width: 80%;
@@ -324,7 +324,7 @@ nav {
     color: #696969;
 }
 
-/* ----------- SECTION 2 POUR DESKTOP (>1024px) ---------- */
+/* ----------- SECTION CHIFFRES CLES POUR DESKTOP (>1024px) ---------- */
 
 @media screen and (min-width: 1024px) {
 
@@ -351,7 +351,7 @@ nav {
 
 }
 
-/* ----------- SECTION 3 MOBILE ---------- */
+/* ----------- SECTION NICE MOBILE ---------- */
 
 .container_nice {
     width: 90%;
@@ -401,7 +401,7 @@ nav {
     border-radius: 5px;
 }
 
-/* ----------- SECTION 3 POUR DESKTOP (>1024px) ---------- */
+/* ----------- SECTION NICE POUR DESKTOP (>1024px) ---------- */
 
 @media screen and (min-width: 1024px) {
 
@@ -434,7 +434,7 @@ nav {
 
 }
 
-/* ----------- SECTION 4 MOBILE (EQUIPE) ---------- */
+/* ----------- SECTION EQUIPE MOBILE (EQUIPE) ---------- */
 
 .equipe {
     width: 90%;
@@ -497,7 +497,7 @@ nav {
     color: #696969;
 }
 
-/* ----------- SECTION 4 (EQUIPE) POUR DESKTOP (>1024px) ---------- */
+/* ------------ SECTION EQUIPE POUR DESKTOP (>1024px) ----------- */
 
 @media screen and (min-width: 1024px) {
     
@@ -532,7 +532,7 @@ nav {
 
 }
 
-/* ----------- SECTION 5 MOBILE (FORMATEUR) ---------- */
+/* ----------- SECTION FORMATEUR MOBILE ---------- */
 
 .container_formateur {
     width: 90%;
@@ -587,7 +587,7 @@ nav {
     color: #696969;
 }
 
-/* ----------- SECTION 5 (FORMATEUR) DESKTOP (>1024px) ---------- */
+/* ----------- SECTION FORMATEUR DESKTOP (>1024px) ---------- */
 
 @media screen and (min-width: 1024px) {
 
@@ -616,7 +616,7 @@ nav {
 
 }
 
-/* ----------- SECTION CHOIX ---------- */
+/* ----------- SECTION ORIENTATION ---------- */
 
 .choix {
     width: 100%;
@@ -635,6 +635,7 @@ nav {
     font-size: 28px;
     color: #F76C6C;
     padding: 10px;
+    text-align: center;
 }
 
 .container-choix p {
@@ -684,9 +685,49 @@ nav {
     background: white;
 }
 
-@media screen and (min-width: 1024px) {
+/* ----------- SECTION ORIENTATION DESKTOP (>1024px) ---------- */
 
+@media screen and (min-width: 1024px) {
+    .container-choix {
+        align-items: flex-start;
+    }
+
+    .container-title-p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-title-p h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .container-title-p p {
+        text-align: left;
+    }
+
+    .formulaire-choix {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-questions-respons {
+        width: 45%;
+    }
+
+    .container-questions-respons label {
+        font-size: 16px;
+    }
+
+    .container-choix button {
+        padding: 18px 25px;
+        margin: 20px auto ;
+        font-size: 16px;
+    }
 }
+
+
 
 
 /* ----------- FOOTER ---------- */
@@ -710,6 +751,22 @@ footer {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
