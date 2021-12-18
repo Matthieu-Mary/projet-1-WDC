@@ -50,10 +50,16 @@ const resultTest = () => {
        
         if (resultResponseA >= 3) {
           alert ("La formation Front-End est faite pour vous ! Pour plus d'informations, veuillez consulter notre page 'Formation'")
-        } else if (resultResponseB >= 3) {
+        } else if (resultResponseC >= 3) {
           alert ("La formation Back-End est faite pour vous ! Pour plus d'informations veuillez consulter notre page 'Formation'")
-        } else if (resultResponseC >= 2) {
-          alert ("Vous semblez indécis, vous trouverez des informations approfondies dans notre rubrique 'Formations'..")
+        } else if (resultResponseA === 2 && resultResponseB === 2) {
+          alert ("La formation Front-End est faite pour vous ! Pour plus d'informations, veuillez consulter notre page 'Formation'")
+        } else if (resultResponseB === 2 && resultResponseC === 2) {
+          alert ("La formation Back-End est faite pour vous ! Pour plus d'informations veuillez consulter notre page 'Formation'")
+        } else if (resultResponseA === 2 && resultResponseC === 2) {
+          alert ("Les deux formations pourraient vous convenir ! Pour plus d'informations veuillez consulter notre page 'Formation' ")
+        } else {
+          alert ("Vous semblez indécis.. Rendez vous sur notre page 'Formation', cela vous aidera à faire votre choix")
         } 
 })
 }
