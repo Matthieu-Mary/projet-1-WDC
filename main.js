@@ -30,7 +30,8 @@ const resultTest = () => {
   let resultResponseA = 0;
   let resultResponseB = 0;
   let resultResponseC = 0;
-
+// submit, (e)
+// log e.target.elements
   buttonSub.addEventListener("click", () => {
         for (let i  = 0; i < valueResponseA.length; i++) {
           if (valueResponseA[i].checked === true) {
@@ -75,3 +76,14 @@ if (btnSubmit) {
     alert("Félicitation votre requête à bien été envoyée. Notre équipe traitera votre demande dans les plus brefs délais.");
   });
 }
+
+// PAGE LOCAUX
+
+
+let articles = document.querySelectorAll("article");
+// let image = document.querySelectorAll(".container-image");
+// let text = document.querySelectorAll(".container-text");
+
+articles.forEach((article)=> {
+  console.log(article);
+})
