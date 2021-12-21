@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+    <title>Régistration en ligne</title>
+</head>
+<body class="admission">
+    <header>
+
+
+        <!-- NAV MOBILE -->
+
+
+        <nav class="mobile">
+            <div class="container_title_logo">
+                <div class="container_logo">
+                  <a href="index.html"> <img src="./img/wildcodeschool-logo-meta-image-f6f2f7f52b82bfc419f031f6a989020a8b094d7a4e6676ab6f0dff0b0f470da9.png" alt="logo"></a> 
+                </div>
+                <h1>Campus de Nice</h1>              
+            </div>
+
+            <div class="container_puce_mobile">
+                <img src="./img/Group 10.png" alt="puce menu déroulant">
+            </div>
+
+            <ul class="toggle_menu">
+
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="locaux.html">Locaux</a></li>
+                <li><a href="formations.html">Formations</li></a>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+
+        </nav>
+
+
+         <!-- NAV DESKTOP -->
+
+
+        <nav class="desktop">
+       
+            <div class="container_title_logo">
+                <div class="container_logo">
+                   <a href="index.html"> <img src="./img/wildcodeschool-logo-meta-image-f6f2f7f52b82bfc419f031f6a989020a8b094d7a4e6676ab6f0dff0b0f470da9.png" alt="logo"></a>
+                </div>
+                <h1>Campus de Nice</h1>              
+            </div>
+
+            <ul>
+
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="locaux.html">Locaux</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <section class="admissionContainer">
+            <h1>Inscription en ligne</h1>
+            <div class="rectangle"></div>
+            <p>Wild Code School a besoin des coordonnées que vous nous fournissez pour vous contacter au sujet de nos produits et services. Vous pouvez vous désabonner de ces communications à tout moment. Consultez notre Politique de confidentialité pour en savoir plus sur nos modalités de désabonnement, ainsi que sur nos politiques de confidentialité et sur notre engagement vis-à-vis de la protection et de la vie privée.</p>
+            <form class="admissionForm">
+                <div class="gridForme">
+                    <div class="admissionInput">
+                        <label for="firstname">Nom</label><br>
+                        <input type="text" id="firstname" name="fname" required>
+                    </div>
+
+                    <div class="admissionInput">
+                        <label for="lastname">Prénom</label><br>
+                        <input type="text" id="lastname" name="lname" required>
+                    </div>
+
+                    <div class="admissionInput">
+                        <label for="adress">Adresse</label><br>
+                        <input type="text" id="adress" name="adress" required>
+                    </div>
+
+                    <div class="admissionInput">
+                        <label for="city">Ville</label><br>
+                        <input type="text" id="city" name="city" required>
+                     </div>
+
+                    <div class="admissionInput">
+                        <label for="zipCode">Code postal</label><br>
+                        <input type="number" id="zipCode" name="zipCode" required>
+                    </div>
+
+                    <div class="admissionInput">
+                        <label for="country">Pays</label><br>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+
+                    <div class="admissionInput">
+                        <label for="email">Adresse mail</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="admissionInput">
+                         <label for="phone">Numéro de téléphone</label><br>
+                         <input type="number" id="phone" name="phone" minlength="10" maxlength="12" required>
+                    </div>
+                </div>
+
+                <hr>
+                <section class="choiceFormation">
+                    <div>
+                        <label for="devFrontEnd">Formation développeur web Front-End</label>
+                        <input type="checkbox" id="devFrontEnd" name="frontDev" value="inscriptionFrontEnd" required>
+                    </div>
+                    <div>
+                        <label for="devFrontEnd">Formation développeur web Full Stack</label>
+                        <input type="checkbox" id="devFrontEnd" name="frontDev" value="inscriptionFullStack" required>
+    
+                    </div>
+                </section>
+            <div class="admissionInput">
+                <label for="campus">Campus</label><br>
+                  <select id="campus" name="campus" required>
+                              <option value="" selected="selected">Choisissez votre future campus...</option>
+                      		  <option value="Nice">Nice</option>
+                     		  <option value="Remote">Remote</option>
+                          </select>
+            </div>
+
+
+                <input class="call_to_action_2" type="submit" value="Envoyer">
+            </form>   
+        </section>
+    </main>
+     <!-- FOOTER -->
+
+     <footer>
+        <span>© Veneta - Vincent - Matthieu</span>
+     </footer>
+     
+        <script src="./formations.js"></script>
+</body>
+</html>
