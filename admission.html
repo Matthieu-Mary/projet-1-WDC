@@ -26,14 +26,14 @@
             </div>
 
             <div class="container_puce_mobile">
-                <img src="./img/Group 10.png" alt="puce menu déroulant">
+                <img src="./img/menu.png" alt="puce menu déroulant">
             </div>
 
             <ul class="toggle_menu">
 
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="locaux.html">Locaux</a></li>
-                <li><a href="formations.html">Formations</li></a>
+                <li><a href="formations.html">Formations</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 
             </ul>
@@ -108,29 +108,29 @@
 
                     <div class="admissionInput">
                          <label for="phone">Numéro de téléphone</label><br>
-                         <input type="number" id="phone" name="phone" minlength="10" maxlength="12" required>
+                         <input type="tel" id="phone" name="phone" minlength="10" maxlength="12" required>
                     </div>
                 </div>
 
                 <hr>
-                <section class="choiceFormation">
+                <div class="choiceFormation">
                     <div>
                         <label for="devFrontEnd">Formation développeur web Front-End</label>
                         <input type="checkbox" id="devFrontEnd" name="frontDev" value="inscriptionFrontEnd" required>
                     </div>
                     <div>
-                        <label for="devFrontEnd">Formation développeur web Full Stack</label>
-                        <input type="checkbox" id="devFrontEnd" name="frontDev" value="inscriptionFullStack" required>
+                        <label for="devFullStack">Formation développeur web Full Stack</label>
+                        <input type="checkbox" id="devFullStack" name="devFullStack" value="inscriptionFullStack" required>
     
                     </div>
-                </section>
+                </div>
             <div class="admissionInput">
                 <label for="campus">Campus</label><br>
                   <select id="campus" name="campus" required>
-                              <option value="" selected="selected">Choisissez votre future campus...</option>
-                      		  <option value="Nice">Nice</option>
-                     		  <option value="Remote">Remote</option>
-                          </select>
+                         <option value="" selected="selected">Choisissez votre future campus...</option>
+                      	 <option value="Nice">Nice</option>
+                     	 <option value="Remote">Remote</option>
+                  </select>
             </div>
 
 
