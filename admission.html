@@ -69,45 +69,46 @@
             <h1>Inscription en ligne</h1>
             <div class="rectangle"></div>
             <p>Wild Code School a besoin des coordonnées que vous nous fournissez pour vous contacter au sujet de nos produits et services. Vous pouvez vous désabonner de ces communications à tout moment. Consultez notre Politique de confidentialité pour en savoir plus sur nos modalités de désabonnement, ainsi que sur nos politiques de confidentialité et sur notre engagement vis-à-vis de la protection et de la vie privée.</p>
-            <form class="admissionForm">
+            
+            <form id="admissionForm">
                 <div class="gridForme">
                     <div class="admissionInput">
-                        <label for="firstname">Nom</label><br>
+                        <label for="firstname">Nom</label>
                         <input type="text" id="firstname" name="fname" required>
                     </div>
 
                     <div class="admissionInput">
-                        <label for="lastname">Prénom</label><br>
+                        <label for="lastname">Prénom</label>
                         <input type="text" id="lastname" name="lname" required>
                     </div>
 
                     <div class="admissionInput">
-                        <label for="adress">Adresse</label><br>
+                        <label for="adress">Adresse</label>
                         <input type="text" id="adress" name="adress" required>
                     </div>
 
                     <div class="admissionInput">
-                        <label for="city">Ville</label><br>
+                        <label for="city">Ville</label>
                         <input type="text" id="city" name="city" required>
                      </div>
 
                     <div class="admissionInput">
-                        <label for="zipCode">Code postal</label><br>
+                        <label for="zipCode">Code postal</label>
                         <input type="number" id="zipCode" name="zipCode" required>
                     </div>
 
                     <div class="admissionInput">
-                        <label for="country">Pays</label><br>
+                        <label for="country">Pays</label>
                         <input type="text" id="country" name="country" required>
                     </div>
 
                     <div class="admissionInput">
-                        <label for="email">Adresse mail</label><br>
+                        <label for="email">Adresse mail</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
                     <div class="admissionInput">
-                         <label for="phone">Numéro de téléphone</label><br>
+                         <label for="phone">Numéro de téléphone</label>
                          <input type="tel" id="phone" name="phone" minlength="10" maxlength="12" required>
                     </div>
                 </div>
@@ -116,17 +117,17 @@
                 <div class="choiceFormation">
                     <div>
                         <label for="devFrontEnd">Formation développeur web Front-End</label>
-                        <input type="checkbox" id="devFrontEnd" name="frontDev" value="inscriptionFrontEnd" required>
+                        <input type="radio" id="devFrontEnd" name="choiseTraining" value="inscriptionFrontEnd" required>
                     </div>
                     <div>
                         <label for="devFullStack">Formation développeur web Full Stack</label>
-                        <input type="checkbox" id="devFullStack" name="devFullStack" value="inscriptionFullStack" required>
+                        <input type="radio" id="devFullStack" name="choiseTraining" value="inscriptionFullStack" required>
     
                     </div>
                 </div>
             <div class="admissionInput">
-                <label for="campus">Campus</label><br>
-                  <select id="campus" name="campus" required>
+                <label for="campus">Campus</label>
+                  <select id="campus" name="campus">
                          <option value="" selected="selected">Choisissez votre future campus...</option>
                       	 <option value="Nice">Nice</option>
                      	 <option value="Remote">Remote</option>
@@ -134,7 +135,7 @@
             </div>
 
 
-                <input class="call_to_action_2" type="submit" value="Envoyer">
+                <input class="call_to_action_2" id="submit" type="submit" value="Envoyer">
             </form>   
         </section>
     </main>
@@ -145,5 +146,6 @@
      </footer>
      
         <script src="./main.js"></script>
+        <script src="./admission.js"></script>
 </body>
 </html>
