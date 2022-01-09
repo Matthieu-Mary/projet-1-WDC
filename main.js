@@ -20,7 +20,7 @@ puce.addEventListener("click", () => {
 
 
 // FORM CHOICE
-
+/*
 const buttonSub = document.querySelector(".sub-button");
 const valueResponseA = document.querySelectorAll(".response-a");
 const valueResponseB = document.querySelectorAll(".response-b");
@@ -66,16 +66,10 @@ const resultTest = () => {
 }
 
 resultTest();
+*/
 
 // PAGE CONTACT
 
-const btnSubmit = document.querySelector(".submit");
-
-if (btnSubmit) {
-  btnSubmit.addEventListener("click", () => {
-    alert("Félicitation votre requête à bien été envoyée. Notre équipe traitera votre demande dans les plus brefs délais.");
-  });
-}
 
 // PAGE LOCAUX
 
@@ -87,4 +81,9 @@ let articles = document.querySelectorAll("article");
 articles.forEach((article)=> {
   console.log(article);
 })
+
+
+
+
+
 

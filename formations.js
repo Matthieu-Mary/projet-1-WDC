@@ -1,32 +1,22 @@
 
-//SLIDER FINANCEMENT FORMATIONS
+const toggleRemoteButton = document.querySelector("#remote");
+const toggleCampusButton = document.querySelector("#onCampus");
 
-// let slideIndex = 1;
-// showDivs(slideIndex);
 
-// function plusDivs(n) {
-//   showDivs(slideIndex += n);
-// }
+toggleCampusButton.addEventListener("click", () => toggleCampusModules("webDev_remote", "webDev_remoteHide", "call_to_action_2", "call_to_action_3"));
 
-// function showDivs(n) {
-//   let i;
-//   let x = document.getElementsByClassName("sliderFinanceursItem");
-//   if (n > x.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = x.length} ;
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex-1].style.display = "block";
-// }
 
-// let buttonLeft=document.querySelector('.w3-display-left');
+toggleRemoteButton.addEventListener("click", () =>  toggleCampusModules("webDev_remoteHide", "webDev_remote", "call_to_action_3", "call_to_action_2" ));
 
-// buttonLeft.addEventListener('click',plusDivs(){
-//     n=-1}
-//     );
 
-// let buttonRight=document.querySelector('.w3-display-right');
+function toggleCampusModules (oldClass, newClass, campusButtonClass, remoteButtonClass){
+  const remoteCoursesElements = document.querySelectorAll(`.`+oldClass);
+  if (remoteCoursesElements.length > 0) {
+      remoteCoursesElements.forEach(element => {
+        element.className = (newClass);
+    })
 
-// buttonRight.addEventListener('click',plusDivs(){
-//     n=+1}
-//     );
+  toggleRemoteButton.className = (remoteButtonClass);
+  toggleCampusButton.className = (campusButtonClass);
+  } 
+}
