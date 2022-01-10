@@ -11,12 +11,10 @@ toggleRemoteButton.addEventListener("click", () =>  toggleCampusModules("webDev_
 
 function toggleCampusModules (oldClass, newClass, campusButtonClass, remoteButtonClass){
   const remoteCoursesElements = document.querySelectorAll(`.`+oldClass);
-  if (remoteCoursesElements.length > 0) {
-      remoteCoursesElements.forEach(element => {
-        element.className = (newClass);
+  remoteCoursesElements.forEach(element => {
+      element.className = (newClass);
     })
 
   toggleRemoteButton.className = (remoteButtonClass);
   toggleCampusButton.className = (campusButtonClass);
-  } 
-}
+} 
