@@ -17,13 +17,3 @@ puce.addEventListener("click", () => {
   }
 
 })
-
-
-
-
-
-
-
-
-
-
