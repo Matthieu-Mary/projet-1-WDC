@@ -812,16 +812,49 @@ nav {
 /* ----------- FOOTER ---------- */
 
 footer {
-    position:relative;
-    bottom:0;
     background: #333333;
     width: 100%;
-    height: 75px;
+    height: 80px;
+    display: flex;
+    color: white;
+}
+
+.reseaux-sociaux {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    width: 50%;
+    margin: 0 10px;
+    padding: 20px;
 }
+
+.reseaux-sociaux ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.reseaux-sociaux ul li {
+    margin-left: 20px;
+}
+
+.reseaux-sociaux h6 {
+    font-size: 20px;
+    color: #F76C6C;
+}
+
+.reseaux-sociaux svg{
+    width: 25px;
+    height: 25px;
+}
+
+.container-noms {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* ----------- FOOTER RESPONSIVE ---------- */
 
@@ -853,6 +886,11 @@ footer {
   .title-contact {
     font-size: 2rem;
     padding: 0 40px 40px 0;
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
   }
   
   form .name {
@@ -889,7 +927,7 @@ footer {
     justify-content: flex-end;
   }
   
-  .submit {
+  form .contact-submit  {
     padding: 10px;
     font-size: 12px;
     width: 131px;
@@ -1053,6 +1091,7 @@ article:nth-child(2), article:nth-child(4) {
     width: 80%;
 }
 
+
 .modalitiesChoice{
     display: flex;
     flex-wrap: wrap;
@@ -1092,6 +1131,9 @@ article:nth-child(2), article:nth-child(4) {
     justify-content: flex-end;
 }
 
+.webDev_remoteHide{
+    display:none;
+}
 
 .webDev_campus p, .webDev_remote p{
     text-align: left;
@@ -1105,8 +1147,7 @@ article:nth-child(2), article:nth-child(4) {
 
 .webDev h6 {
     text-align: left;
-    margin: 5px 0 0;
-}
+    margin: 5px 0 0;}
 
 .webDev .call_to_action_2{
     min-width: 70px;
@@ -1130,23 +1171,24 @@ article:nth-child(2), article:nth-child(4) {
     margin:40px;
     text-align:center;
 }
-.sliderFinanceurs{
+.sliderFinanceurs{  
     display: flex;
-    align-content: center;
-    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 30px; 
     background-color: rgb(255,255,255,0.2);
 }
 
 .sliderFinanceursItem{
+    height: 100px;
+    width: 200px;
     display: flex;
     align-items: center;
     background-color: rgba(92,92,92,0.65);
     border-radius: 5px;
     padding:10px;
-    margin-left:1em;
-    display: none;
-
+    margin:1em;
+    justify-content: space-between;
 }
 
 .sliderFinanceursItem img{
@@ -1161,21 +1203,9 @@ article:nth-child(2), article:nth-child(4) {
     text-underline-offset: 3px;
 }
 
-.sliderFinanceursItem a:hover{
-    color:black;
-    text-decoration: underline black 3px;
-    text-underline-offset: 3px;
-}
 
-.w3-button{
-    border: 0;
-}
 
-.w3-display-right, .w3-display-left{
-    color:#8f8f91;
-    font-size: 1em;
-    padding:2px;
-}
+
 
 /*-------PAGE ADMISSION--------*/
 
@@ -1232,7 +1262,7 @@ text-align: left;
 margin: 1em 0;
 }
 
-.admissionForm hr{
+#admissionForm hr{
     margin-top:1em;
     border: solid #f0f0f5 1px;
 }
@@ -1286,3 +1316,4 @@ margin: 1em 0;
         grid-template-areas: "slot-left";
     }
 }
+

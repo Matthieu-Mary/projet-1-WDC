@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "parcel": "^2.1.1"
+  },
+  "name": "projet-1-wdc",
+  "description": "",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthieu-Mary/projet-1-WDC.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthieu-Mary/projet-1-WDC/issues"
+  },
+  "homepage": "https://github.com/Matthieu-Mary/projet-1-WDC#readme"
+}
