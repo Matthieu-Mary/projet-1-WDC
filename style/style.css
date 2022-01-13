@@ -788,6 +788,7 @@ nav {
     .formulaire-choix {
         width: 100%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
@@ -858,10 +859,21 @@ footer {
 
 /* ----------- FOOTER RESPONSIVE ---------- */
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 750px) {
 
     footer {
-      height: 25px;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reseaux-sociaux {
+        width: 100%;
+    }
+
+    .container-noms {
+        width: 100%;
+        padding: 10px;
     }
 
 }
