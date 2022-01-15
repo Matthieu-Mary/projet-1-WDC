@@ -551,6 +551,7 @@ nav {
 
 .container_img_membre_equipe {
     height: 250px;
+    width:100%;
     display: flex;
     flex-direction: column;
     position: relative;
